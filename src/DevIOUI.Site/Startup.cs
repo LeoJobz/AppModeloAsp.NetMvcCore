@@ -31,10 +31,13 @@ namespace DevIOUI.Site
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                        name: "default",
-                        template: "{controller=Home}/{action=Index}/{id?}");
-                //routes.MapRoute("default","{controller = Home}/{ action = Index}/{ id ?}");
+                //routes.MapRoute(
+                //        name: "default",
+                //        template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(name: "areas", template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }
