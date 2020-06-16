@@ -1,1 +1,1 @@
-# Onlye a Playground Application 
+# Only a Playground Application 
